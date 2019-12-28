@@ -5,8 +5,8 @@ const path = require("path");
 module.exports = {
   mode: "production",
   entry: {
-    main: "./index",
-    c: "./src/b"
+    foo: "./src/foo",
+    bar: "./src/bar"
   },
   output: {
     path: path.resolve("./dist"),
@@ -15,20 +15,11 @@ module.exports = {
   },
   plugins: [new CleanWebpackPlugin.CleanWebpackPlugin({})],
   optimization: {
+    minimize: false,
+    moduleIds: "named",
     splitChunks: {
       chunks: "all",
-      minSize: 8,
-      minChunks: 2,
-      maxAsyncRequests: 5,
-      maxInitialRequests: 3,
-      automaticNameDelimiter: "~",
-      name: true,
-      cacheGroups: {
-        common: {
-          test: /shared/,
-          name: true
-        }
-      }
+      minSize: 16,
     }
   }
 };

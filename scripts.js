@@ -1,7 +1,10 @@
 const webpack = require("webpack")
-const configInvokable = require("./webpack.config")
 
-const compiler = webpack(configInvokable({}))
+const WHEREYOUARE = process.cwd()
+
+const config = require(`${WHEREYOUARE}/webpack.config`)
+
+const compiler = webpack(config)
 compiler.run((err, stat) => {
   if (err) throw err
   console.log(stat.toString({

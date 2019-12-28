@@ -2,9 +2,13 @@
   "name": "learnwebpack",
   "version": "1.0.0",
   "description": "a repo for studing webpack.",
+  "repository": {
+    "url": "git@github.com:zxh19890103/learnwebpack.git"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mms": "cd ./min-max-size && node ../scripts.js"
   },
   "keywords": [
     "webpack"
