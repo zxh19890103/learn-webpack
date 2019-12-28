@@ -20,6 +20,8 @@ module.exports = {
     splitChunks: {
       chunks: "all",
       minSize: 16,
+      maxSize: 32,
+      hidePathInfo: false,
     }
   }
 };
