@@ -8,7 +8,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "mms": "cd ./min-max-size && node ../scripts.js"
+    "mms": "cd ./min-max-size && node ../scripts.js",
+    "mc": "cd ./minchunks && node ../scripts.js"
   },
   "keywords": [
     "webpack"
