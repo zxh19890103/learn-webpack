@@ -9,7 +9,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "mms": "cd ./min-max-size && node ../scripts.js",
-    "mc": "cd ./minchunks && node ../scripts.js"
+    "mc": "cd ./minchunks && node ../scripts.js",
+    "mr": "cd ./max-requests && node ../scripts.js"
   },
   "keywords": [
     "webpack"
