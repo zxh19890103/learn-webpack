@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "babel src --out-dir lib --extensions '.ts'"
+    "compile": "babel src/test.ts --out-dir lib --extensions '.ts'"
   },
   "keywords": [
     "typescript",
@@ -20,12 +20,15 @@
     "@babel/core": "^7.7.7",
     "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.7.7",
+    "@babel/plugin-transform-runtime": "^7.7.6",
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-typescript": "^7.7.7",
     "babel-loader": "^8.0.6",
     "typescript": "^3.7.4"
   },
   "dependencies": {
+    "@babel/runtime": "^7.7.7",
+    "@babel/runtime-corejs3": "^7.7.7",
     "core-js": "^3.6.2"
   }
 }
