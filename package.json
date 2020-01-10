@@ -10,7 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "mms": "cd ./min-max-size && node ../scripts.js",
     "mc": "cd ./minchunks && node ../scripts.js",
-    "mr": "cd ./max-requests && node ../scripts.js"
+    "mr": "cd ./max-requests && node ../scripts.js",
+    "rc": "cd ./require-context && node ../scripts.js",
+    "wbt": "cd ./with-babel-ts && node ../scripts.js"
   },
   "keywords": [
     "webpack"

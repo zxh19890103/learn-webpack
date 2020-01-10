@@ -1,0 +1,1 @@
+require.context("", true, /\.\/feature\d\/index.js/)
