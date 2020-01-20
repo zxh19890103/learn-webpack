@@ -8,6 +8,7 @@ class Female extends Human {
 
 const human = new Human("Singhi")
 human.intro()
+human.jnn = 90
 
 const female = new Female("Wf")
 female.intro()

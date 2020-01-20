@@ -1,4 +1,5 @@
 class Human {
+  [x: string]: any
   name: string = "S"
   constructor(name: string) {
     this.name = name
