@@ -6,7 +6,7 @@ module.exports = {
   mode: "production",
   entry: {
     main: "./src/index",
-    lazy: "./src/lazy",
+    page: "./src/page",
   },
   output: {
     path: path.resolve("./dist"),
@@ -17,25 +17,19 @@ module.exports = {
   optimization: {
     minimize: false,
     moduleIds: "named",
+    runtimeChunk: "single",
     splitChunks: {
       chunks: "all",
-      name: (module, chunks, cacheGroupKey) => {
-        const moduleFileName = module.identifier().split('/').reduceRight(item => item)
-        const allChunks = chunks.map(c => c.name).join('~')
-        return `${cacheGroupKey}_${allChunks}_${moduleFileName}`
-      },
+      name: false,
+      // name: (module, chunks, cacheGroupKey) => {
+      //   const moduleFileName = module.identifier().split('/').reduceRight(item => item)
+      //   const allChunks = chunks.map(c => c.name).join('~')
+      //   return `${cacheGroupKey}_${allChunks}_${moduleFileName}`
+      // },
       cacheGroups: {
         default: false,
-        groupB: {
-          test: /groupB/,
-          enforce: true
-        },
-        groupADeps: {
-          test: /groupA\.dep/,
-          enforce: true
-        },
-        groupA: {
-          test: /groupA/,
+        group: {
+          test: /group/,
           enforce: true
         },
       }
