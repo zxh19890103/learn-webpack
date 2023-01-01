@@ -27,7 +27,7 @@
     "react-dom": "^16.12.0",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
-    "webpack": "^4.41.2"
+    "webpack": "^5.75.0"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
